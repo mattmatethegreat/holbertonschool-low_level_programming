@@ -13,5 +13,5 @@ int _isupper(int x)
 	{
 	return (1);
 	}
-	Return (0);
+	return (0);
 }
