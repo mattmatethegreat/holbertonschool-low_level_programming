@@ -5,6 +5,7 @@
  * @n: number of times to print line
  * Return: empty
  */
+
 void print_diagonal(int n)
 
 {

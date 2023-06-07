@@ -7,6 +7,7 @@
  */
 
 void print_most_numbers(void)
+
 {
 
 	int x = 0;
