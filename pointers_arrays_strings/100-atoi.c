@@ -10,7 +10,7 @@ int _atoi(char *s)
 
 {
 
-	int c + 0;
+	int c = 0;
 	unsigned int ni = 0;
 	int min = 1;
 		int isi = 0;
@@ -27,7 +27,7 @@ int _atoi(char *s)
 				ni = (ni * 10) + (s[c] - '0');
 				c++;
 			}
-			if (isi ++ 1)
+			if (isi == 1)
 			{
 				break;
 			}
