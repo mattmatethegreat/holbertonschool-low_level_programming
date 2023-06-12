@@ -1,14 +1,14 @@
 #include <unistd.h>
 
-/**
- * _putchar writes the character c
- * @c: the character
+/** writes the character c
  * Return: on success 1
- * on error return -1
+ * on error, -1 returned
  */
 
 int _putchar(char c)
 
 {
+
 	return (write(1, &c, 1));
+
 }
