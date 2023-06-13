@@ -1,6 +1,7 @@
 #include <unistd.h>
 
-/** writes the character c
+/** _putchar - writed character c
+ * @c: the character to print
  * Return: on success 1
  * on error, -1 returned
  */

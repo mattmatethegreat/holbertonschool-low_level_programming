@@ -1,11 +1,10 @@
 #include "main.h"
 
-/** writes the character c
- * Return: on success 1
- * on error, -1 returned
+/** main - entry point
+ * Return: always 0
  */
 
-int _putchar(char c)
+int main(void)
 
 {
 
