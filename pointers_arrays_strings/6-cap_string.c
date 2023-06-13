@@ -2,6 +2,7 @@
 
 /**
  * 6-cap_string.c capitalizes all words of a string
+ * cap_string capitalizes
  * @str: the string
  * Return: A pointer to changed string
  */
