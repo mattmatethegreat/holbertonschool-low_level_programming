@@ -2,15 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *create_buffer(char *file)
+char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
- *  * create_buffer - Allocates 1024 bytes for a buffer.
- *   * @file: The name of the file buffer is storing chars for.
- *    *
- *     * Return: A pointer to the newly-allocated buffer.
- *      */
+ * create_buffer - allocates 1024 bytes for a buffer
+ * file The name of the file buffer is storing
+ * return A pointer to the newly  buffer
+ */
 
 char *create_buffer(char *file)
 {
@@ -38,8 +37,7 @@ char *create_buffer(char *file)
 
 void close_file(int fd)
 
-{
-	
+{	
 	int c;
 	
 	c = close(fd);
@@ -98,7 +96,7 @@ int main(int argc, char *argv[])
 		
 		dprintf(STDERR_FILENO,
 				
-		"Error: Can't write to %s\n", argv[2];
+		"Error: Can't write to %s\n", argv[2]);
 		
 		free(buffer);
 		exit(99);
@@ -115,4 +113,3 @@ int main(int argc, char *argv[])
 	close_file(to);
 	return (0);
 }
-
