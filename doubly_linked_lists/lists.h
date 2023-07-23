@@ -1,0 +1,33 @@
+#ifndef _LISTS_
+#define _LISTS_
+
+#include <sdlib.h>
+#include <stdio.h>
+
+/**
+ * struct dlistint_s - doubly linked list
+ * @x: integer
+ * @prev: points to previous node
+ * @next: points next node
+ */
+
+typedef struct dlistint_s
+
+{
+	int x;
+	struct dlistint_s *prev;
+	struct dlistint_s *next;
+
+}
+dlistint_t;
+
+size_t print_dlistint(const dlistint_t *h);
+size_t dlistint_len(const dlistint_t *h);
+dlistint_t *add_dnodeint(dlistint_t **head, const int x);
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int x);
+void free_dlistint(dlistint_t *head);
+dlistint_t *get_dnodeint_At_index(dlistint_t *head, unsigned int index);
+int sum_dlistint(dlistint_t *head);
+dlistint_t *insert_dnodeint_At_index(dlistint_t **h, unsigned int idx, int x);
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+#endif
